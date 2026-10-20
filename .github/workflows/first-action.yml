@@ -1,0 +1,19 @@
+# 1 - name of the worklfow
+name: First Test Workflow
+
+# 2 - when worflow should be exetuted
+# after "on" add event - worflow dispatch - tri8gger by user manually
+on: workflow_dispatch
+
+#3 jobs add with tab
+jobs:
+#name of the job
+  first-job:
+  #runners
+    runs-on: uubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "hello world!"
+      - name: Print goodbye
+        run: echo "byeee"
+  
