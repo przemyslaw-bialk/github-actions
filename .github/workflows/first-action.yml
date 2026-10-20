@@ -10,7 +10,7 @@ jobs:
 #name of the job
   first-job:
   #runners
-    runs-on: uubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Print greeting
         run: echo "hello world!"
